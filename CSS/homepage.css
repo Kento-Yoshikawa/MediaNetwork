@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* 基本設定クリア */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, footer, header, hgroup, menu, nav, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;あ
+    vertical-align: baseline;
+    color: #000;
+}
+.pagetitle{
+    text-align: center;
+    vertical-align: top;
+    font-size: 5ex
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+a {
+text-decoration: none;
+}
+a:link {
+    color: #0000ff;
+}
+a:visited {
+    color: #800080;
+}
+a:hover {
+    color: #ff0000;
+}
+a:active {
+    color: #ff8000;
+}
+
+/*index.html
+の冒頭アニメーション用
+*/
+.texttitle{
+    text-align: center;
+    vertical-align: top;
+    font-size: 300%;
+}
+
+.textsubtitle{
+    text-align: center;
+    vertical-align: top;
+    font-size: 300%;
+}
+
+.txttitle{
+    text-align: center;
+    vertical-align: top;
+    font-size: 300%;
+}
+
+.txtsubtitle{
+    text-align: center;
+    vertical-align: top;
+    font-size: 300%;
+}
+
+/*図の位置*/
+#figure1,#figure2,#figure3,#figure4,#figure5,#figure6,#figure7,#figure8,#figure9,#figure10,#figure11,#figure12,#figure13,#figure14{
+    text-align: center;
+    vertical-align: top;
+}
+
+/*挿入した図の説明用*/
+.Describefigure{
+    text-align: center;
+    vertical-align: top;
+    font-size: 100%;
+}
+
+ul {
+    list-style: none;
+}
+.clear {
+    overflow: hidden;
+    zoom: 1;
+}
+/* 基本のレイアウト */
+body {
+    background: #fff;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+.wrapper-headerinfo {
+    background: #000;
+}
+.headerinfo {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.headerinfo-contents {
+    padding: 20px 4.1666666%;/* 4.1666666%（40px/960px） */
+}
+.wrapper-header {
+    border-top: solid 6px #000;
+}
+.header {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.wrapper-nav-global {
+    background: #fff;
+    border-bottom: solid 2px #000;
+}
+.nav-global {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.wrapper-category {
+    border-top: solid 5px #75b4c4;
+    background: #8ac2d0;
+}
+.category {
+    margin: 0 auto;
+    max-width: 960px;
+}
+.wrapper-main {
+    background: #ededed;
+}
+.wrapper-sidebar {
+    float: left;
+    padding: 20px 0 20px 4.1666666%;
+    width: 20.8333333%;
+}
+.wrapper-contents {
+    float: left;
+    padding: 20px 4.1666666%;/* 4.1666666%（40px/960px） 両側で80px分 */
+    width: 66.6666666%;/*66.6666666%（640px/960px） */
+}
+
+.main {
+    margin: 0 auto;
+    max-width: 1500px;
+    background: #fff;
+}
+.main-contents {
+    padding: 30px 4.1666666%;
+}
+.wrapper-footer {
+    background: #000;
+}
+.footer {
+    margin: 0 auto;
+    max-width: 960px;
+}
+/* headerinfo */
+.headerinfo-contents img {
+    float: left;
+    margin: 0 2.2727272% 10px 0;/* 2.2727272%（20px/880px）*/
+}
+.headerinfo p {
+    padding: 20px 0 0 0;
+    font-size: 0.8em;
+    color: #fff;
+}
+/* header */
+.header .nav-info {
+    position: relative;
+    height: 45px;
+}
+.header .nav-administ a {
+    display: block;
+    padding: 10px 0 0 0;
+    width: 120px;
+    height: 50px;
+    background: #000;
+    border-radius: 0 0 45px 45px;
+    color: #fff;
+    text-align: center;
+    font-size: 0.8em;
+    position: absolute;
+    right: 4.1666666%;/* 4.1666666%（40px/960px） */
+}
+.header .nav-administ a:hover {
+    color: #ddd;
+}
+.header .nav-administ a:active {
+    color: #bbb;
+}
+.header h1 {
+    margin: 0 0 30px 4.1666666%;/* 4.1666666%（40px/960px） */
+    width: 406px;
+    height: 79px;
+    text-indent: -9999px;
+}
+/* nav-global */
+.nav-global li {
+    float: left;
+    width: 19%;
+    text-align: center;
+}
+.nav-global li a {
+    display: block;
+    padding: 15px 0;
+    border-right: solid 1px #ddd;
+    color: #000;
+}
+.nav-global li:last-child a {
+    border-right: none;
+}
+.nav-global li a:hover {
+    padding: 15px 0 10px 0;
+    border-bottom: solid 5px #8ac2d0;
+}
+.nav-global li a:active{
+    border-bottom: solid 5px #75b4c4;
+}
+/* category */
+.category p {
+    padding: 30px 4.1666666% 10px 0;/* 4.1666666%（40px/960px） */
+    text-align: right;
+    font-size: 2em;
+    line-height: 1em;
+    color: #fff;
+}
+/* main-contents */
+.main-contents h1 {
+    margin: 0 0 1em 0;
+    padding: 15px 0 15px 10px;
+    border-left: solid 12px #8ac2d0;
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #75b4c4;
+}
+.main-contents h2 {
+    margin: 2em 0 1em 0;
+    border-bottom: solid 1px #8ac2d0;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #75b4c4;
+}
+.main-contents h3 {
+    margin: 0 0 0.5em 0;
+    font-weight: bold;
+    color: #75b4c4;
+}
+.main-contents p {
+    margin: 0 0 1em 0;
+    line-height: 1.8em;
+}
+.main-contents p.lead {
+    margin: 0 0 1em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+/* footer */
+.footer p {
+    padding: 30px 4.1666666%;/* 4.1666666%（40px/960px） */
+    text-align: right;
+    color: #fff;
+}
+hr{
+    border-top: 1px solid #8ac2d0;
+}
+
+/* category */
+.category p {
+    color: #fff;
+    font-size: 2em;
+    line-height: 1em;
+    padding: 30px 4.1666666% 10px 0;/* 4.1666666%（40px/960px） */
+    text-align: right;
+}
+
+/* sidebar */
+.sidebar ul {
+    background: #8ac2d0;
+    border: solid 3px #75b4c4;
+    width: 194px;
+}
+.sidebar ul li {
+    border-bottom: solid 1px #75b4c4;
+}
+.sidebar ul li:last-child {
+    border-bottom: none;
+}
+.sidebar ul li a {
+    background: url(./images/sidebar-bg1.png) no-repeat 95% 50%;
+    color: #fff;
+    display: block;
+    padding: 15px 1.5em;
+}
+.sidebar ul li a:hover {
+    background: url(./images/sidebar-bg2.png) no-repeat 95% 50%;
+    color: #fff;
+}
+.sidebar ul li a:active {
+    background: url(./images/sidebar-bg3.png) no-repeat 95% 50%;
+    color: #b9d5dc;
+}
+
+/* contents */
+.contents h1 {
+    border-left: solid 12px #8ac2d0;
+    color: #75b4c4;
+    font-size: 1.7em;
+    font-weight: bold;
+    margin: 0 0 1em 0;
+    padding: 15px 0 15px 10px;
+}
+.contents h2 {
+    border-bottom: solid 1px #8ac2d0;
+    color: #75b4c4;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 2em 0 1em 0;
+}
+
+.contents h3 {
+    border-bottom: solid 1px #8ac2d0;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #75b4c4;
+    margin: 1em 0 1em 0;
+}
+
+.contents p {
+    line-height: 1.8em;
+    margin: 0 0 1em 0;
+}
+.contents p.lead {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 0 0 1em 0;
+}
+.contents .section {
+    margin: 0 0 60px 0;
+}

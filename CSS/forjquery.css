@@ -1,0 +1,222 @@
+/**
+ * 　アコーディオン
+ */
+/* アコーディオンのデフォルト（閉） */
+
+.accordion > li {
+    cursor: pointer;
+    margin: 0 0 2px 0;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-color: #8ac2d0;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+}
+/*カーソルが項目に乗った時の色をhogepage.cssと同じにする*/
+.accordion > li:hover {
+    border-bottom: solid 5px #8ac2d0;
+
+}
+
+.accordion > li .content {
+    display: none;
+}
+/* アコーディオンが開いたときのスタイル */
+.accordion > li.expanded {
+    background-color: #8ac2d0;
+}
+
+.accordion > li.expanded .content {
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+    border-top: solid 1px #fff;
+}
+
+/**
+ * 　ドロップダウンメニュー
+ */
+.wrapper-menubar {
+    height: 45px;
+    position: relative;
+}
+.menubar {
+    position: absolute;
+    left: 25%;
+    bottom: 0;
+}
+.dropdown-menu {
+    width: 50px;
+}
+/* ボタンのスタイル */
+.dropdown-menu > a {
+    display: block;
+    padding: 5px 0 5px 40px;
+    background-color: #000;
+    background-image: url(./images/arrow-dropdown1.png)
+    background-position: 25px 50%;
+    background-repeat: no-repeat;
+    color: #fff;
+    font-size: 0.9em;
+    border-radius: 5px;
+}
+.dropdown-menu > a:hover {
+    background-image: url(./images/arrow-dropdown2.png);
+    color: #ddd;
+}
+.dropdown-menu > a:active {
+    background-image: url(./images/arrow-dropdown3.png);
+    color: #a2a2a2;
+}
+/* クリックして開くメニューのスタイル */
+.dropdown-menu > .items {
+    display: none;
+    margin: 2px 0 0 0;
+    width: 150px;
+    position: absolute;
+}
+.dropdown-menu > .items li a {
+    display: block;
+    padding: 5px 0;
+    background: #a2a2a2;
+    color: #fff;
+    font-size: 0.9em;
+    text-align: center;
+}
+.dropdown-menu > .items li:first-child a {
+    border-radius: 5px 5px 0 0;
+}
+.dropdown-menu > .items li:last-child a {
+    border-radius: 0 0 5px 5px;
+}
+.dropdown-menu > .items li a:hover {
+    background: #bbb;
+}
+.dropdown-menu > .items li a:active {
+    background: #757575;
+}
+
+
+
+/**
+ *
+ */
+/* スライドショー全体のスタイル */
+.slide {
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+    font-size: 0; /* 画像下の隙間を埋めるため */
+}
+.slide img {
+    max-width: 100%;
+}
+.slide > .container {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 写真の配置 */
+.slide > .container > li {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s linear;
+}
+.slide > .container > li.current {
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+}
+/* スライドショーのボタン */
+.slide a.prev,
+.slide a.next {
+    position: absolute;
+    display: block;
+    top: 45%;
+    width: 40px;
+    height: 40px;
+    text-indent: -5000px;
+    z-index: 10; /* ボタンを常に画像より上に配置 */
+}
+.slide a.prev {
+    background: url(./images/arrow-left1.png) 50% 50% no-repeat;
+    left: 0;
+}
+.slide a.prev:hover {
+    background: url(./images/arrow-left2.png) 50% 50% no-repeat;
+}
+.slide a.prev:active {
+    background: url(./images/arrow-left3.png) 50% 50% no-repeat;
+}
+.slide a.next {
+    background: url(./images/arrow-right1.png) 50% 50% no-repeat;
+    right: 0;
+}
+.slide a.next:hover {
+    background: url(./images/arrow-right2.png) 50% 50% no-repeat;
+}
+.slide a.next:active {
+    background: url(./images/arrow-right3.png) 50% 50% no-repeat;
+}
+
+/**
+ * 　ウィンドウ上端でグローバルナビゲーションを固定する
+ * 　指定した位置でサイドメニューを固定する
+ */
+.fixed {
+    position: fixed;
+}
+.wrapper-nav-global.fixed {
+    width: 100%;
+}
+
+/**
+ * 　スクロールしてページトップに戻る
+ */
+/* ページトップに戻るボタンのスタイル */
+.pageup {
+    margin: 0 auto;
+    max-width: 960px;
+    height: 30px;
+    background: #fff;
+    position: relative;
+}
+.pageup a {
+    display: block;
+    width: 60px;
+    height: 30px;
+    border-radius: 30px 30px 0 0;
+    background-color: #000;
+    background-image: url(./images/arrow-1.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 4.1666666%;/* 4.1666666%（40px/960px） */
+    bottom: 0;
+}
+.pageup a:hover {
+    background-image: url(./images/arrow-2.png);
+}
+.pageup a:active {
+    background-image: url(./images/arrow-3.png);
+}
+
+/**
+ * 　スクロール位置に合わせてリンクをハイライトする
+ */
+/* サイドバーがハイライトしたときのスタイル */
+.sidebar ul li a.selected {
+    background: url(./images/sidebar-bg4.png) no-repeat 95% 50% #e38d8d;
+    color: #fff;
+}
+
+/*8月11日追記*/
+.scrollEvent{
+    position: relative;
+    display: none
+}
