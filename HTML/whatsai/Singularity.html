@@ -1,0 +1,160 @@
+<!--8月12日追記 -->
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <!--Explain website-->
+   <meta name="description" content="メディアネットワーク 制作ホームページ">
+   <meta name="author" content="1510161 由川拳都">
+   <meta name="keywords" content="人工知能,初学者,機械学習,ディープラーニング">
+   <!--import jquery -->
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="scriptjquery.js"></script>
+   <!--8月11日追記 -->
+   <!--Googleアナリティクスコードを挿入することでアクセス解析ができるようにする
+   これがホームページ側のメリットの一つとなる.
+   本来この内容は見せてはならないのだろうが行ったという証拠として提示しておておく. -->
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104467996-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+   <link rel="shortcut icon" type="image/png" href="images/IsAIbeyondHuman.png">
+  <!--CSS-->
+   <link rel="stylesheet" href="homepage.css">
+   <link rel="stylesheet" href="forjquery.css">
+
+   <title>人工知能への橋渡し</title>
+ </head>
+
+  <body>
+    <!--homepage title -->
+    <div class="texttitle">人工知能への橋渡し</div><br>
+    <div class="textsubtitle">人工知能学習サイト</div>
+    <!-- ==============global============== -->
+  <div class="wrapper-nav-global">
+    <img src="images/homepageicon.png" alt="ヘッダ用アイコン画像"width="200" height="180">
+    <ul class="nav-global clear">
+      <li><a href="./index.html">ホーム</a></li>
+      <li><a href="./contents.html">コンテンツ</a></li>
+      <li><a href="./bbs.php">掲示板</a></li>
+      <li><a href="./feedback.html">フィードバック</a></li>
+      <li><a href="./login.html">ログイン</a></li>
+      </ul>
+  </div><!-- /.wrapper-nav-global -->
+  <div class="wrapper-category">
+    <div class="category">
+      <p>まず、人工知能って何?</p>
+      </div><!-- /.category -->
+  </div><!-- /.wrapper-category -->
+
+
+  <div class="wrapper-main">
+    <div class="main clear">
+
+      <!-- ==============sidebar============== -->
+      <div class="wrapper-sidebar">
+        <div class="sidebar fixedmenu noresponsive" data-offsettop="70">
+          <ul class="accordion">
+            <li><a>まず、人工知能って何?</a>
+              <div class="content">
+                   <a href="AIoutline.html">人工知能のとは何なのか? そしてその歴史</a>
+                   <a href="AIlevel.html">様々な人工知能の分類</a>
+                   <a href="Singularity.html">シンギュラリティ(技術的特異点)って何?</a>
+              </div>
+            </li>
+            <li><a>機械学習って何?</a>
+              <div class="content">
+                   <a href="machinelearning.html">機械学習とは?</a>
+                   <a href="machinelearningalgo.html">機械学習ってどうやってできるの?</a>
+              </div>
+            </li>
+            <li><a>ディープラーニングって何?</a>
+              <div class="content">
+                   <a href="deeplearning.html">ディープラーニング(深層学習)とは?</a>
+                    <a href="deeplearningalgo.html">ディープラーニングってどうやってできるの?</a>
+                    <a href="deeplearning_inthefuture.html">ディープラーニングの今後の可能性と課題</a>
+              </div>
+            </li>
+            </ul>
+          </div><!-- /.sidebar -->
+  </div><!-- /.wrapper-sidebar -->
+<!-- ==============/sidebar============== -->
+<div class="wrapper-contents">
+  <div class="contents">
+    <h1>シンギュラリティ(技術的特異点)って何?</h1>
+    <a href="index.html">ホーム</a>の項目でもお話ししたように、人工知能を懸念する人たちの中には「シンギュラリティ」という事態が起こってしまうのではないかと考えている人もいます。<br>
+    ではこの「シンギュラリティ」とは一体何なのでしょうか?それを説明したいと思います。<br>
+    <h2>シンギュラリティとは</h2>
+    シンギュラリティとは、人工知能が完全に人間よりも賢くなった瞬間のことをいいます。また、シンギュラリティはアメリカの実業家
+    「レイ・カールワイツ」という人が「シンギュラリティは2045年には起こるだろう」と予言をしたことが影響して、通称<h4>「2045年問題」</h4>とも呼ばれていて、この名称のほうが親しみ深いという人もいるでしょう。
+    この2045年にはシンギュラリティが起こるであろうという裏付けとして「ムーアの法則」というものがあります。このムーアの法則について説明したいと思います。
+    <h2>ムーアの法則って何?</h2>
+    「ムーアの法則」とは、インテルの創業者の一人「ゴードン・ムーア」という人が1965年に論文で「半導体の集積率は18カ月で2倍になる」と主張した経験則のことを言います。<br>
+    このままでは、<h4>「え? 何をいっているの?」</h4>という思うかもしれません。「半導体の集積率が18カ月で2倍になる」とはどういう意味なのでしょう?この例として、よくコンピュータの頭脳ともいわれるCPU(中央演算処理装置)
+    が挙げられます。半導体の性能、例で言うとコンピュータの性能が、集積率が上がるとは性能が良くなるという事といえるので、18カ月(1.5年で)2倍にあがる。つまり、1.5年も経てばコンピュータは前よりも2倍頭がよくなっているという
+    法則のことをいいます。<br><br>以下の図は一般的な技術の進歩とコンピュータの技術の進歩の様子を大まかに表したグラフです。<br><br>これは、以下の図のように上方向を年数、右方向を技術の進歩とすると一般的な技術の進歩は図で言うと始めはどんどん技術が進歩していっても、5年経つと始めのころの1.5倍しか技術が進歩せず、段々と伸び悩んでいくのですが、
+    コンピュータの技術の進歩は年が経つごとにますます技術が進歩していき、5年が経つとおよそ10倍にも技術が進歩してしていることがわかります。
+
+    <!--この画像はscilabというMatlabの無料版のような
+     ソフトウェアで自分でグラフを作成し、画像をスクリーンキャプチャしたものである
+     -->
+    <table cellpadding="10" cellspacing="60"><tbody>
+      <tr>
+      <td>
+       <div  class="scrollEvent">
+        <img src="images/logx.JPG" alt="一般的な技術の進歩" width=300 height="400">
+         <figcaption>一般的な技術の進歩の様子</figcaption>
+        </div>
+     </td>
+
+     <td>
+       <div  class="scrollEvent">
+         <img src="images/twobeki.JPG" alt="コンピュータの技術の進歩" width=300 height="400">
+         <figcaption>コンピュータの技術の進歩の様子</figcaption>
+       </div>
+    </td>
+
+    </tr>
+    </tbody>
+  </table>
+
+
+    <h2>じゃあ、なんでシンギュラリティを恐れる人がいるの?</h2>
+    シンギュラリティが起こったということは、人間よりも人工知能のほうが賢くなったということ、ということは人工知能が自ら自分よりも
+    賢い人工知能を作ることが出来るようになる可能性があるということになります。ここまでくると、<h4>人工知能が自分たちよりも頭の悪い人間を
+    襲うような意志をもつ可能性</h4> <h4>人間よりも人工知能が仕事ができるようになったから人間は何をすればよいのだろうか</h4>
+    というような不安材料があること、そしてシンギュラリティが起こった後は全く予想をすることができないので、人間はどうなってしまうのだろうかといった
+    不安もあるため人工知能を恐れる人や否定的意見を持つ人もいて、<h4>「人工知能は人類最後の発明」</h4><h4>「人工知能は悪魔を呼び出していることに他ならない」</h4>と主張する人までもいます。
+
+
+
+
+
+
+ </div><!--contents-->
+  </div><!-- /.wrapper-contents-->
+</div><!-- /.main -->
+
+
+<!-- ==============pageup============= -->
+<div class="pageup">
+<a href="#top" class="scroll-link"></a>
+</div><!-- /.pageup -->
+ <!-- ==============/pageup============== -->
+
+<div class="wrapper-footer">
+  <div class="footer">
+    <small><p>Copyright &copy 2017 K.Yoshikawa All Rights Reserved.</p></small>
+    </div><!-- /.footer -->
+</div><!-- /.wrapper-footer -->
+
+  </body>
+
+</html>

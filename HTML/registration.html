@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- 後で改変-->
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <!--Explain website-->
+   <meta name="description" content="メディアネットワーク 制作ホームページ">
+   <meta name="author" content="1510161 由川拳都">
+   <meta name="keywords" content="人工知能,初学者,機械学習,ディープラーニング">
+   <!--import jquery -->
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="scriptjquery.js"></script>
+
+   <link rel="shortcut icon" type="image/png" href="images/IsAIbeyondHuman.png">
+  <!--CSS-->
+   <link rel="stylesheet" href="homepage.css">
+   <link rel="stylesheet" href="forjquery.css">
+
+   <title>人工知能への橋渡し</title>
+ </head>
+
+  <body>
+    <!--homepage title-->
+    <div class="texttitle">人工知能への橋渡し</div><br>
+    <div class="textsubtitle">人工知能学習サイト</div>
+    <!-- ==============global============== -->
+  <div class="wrapper-nav-global">
+    <img src="images/homepageicon.png" alt="ヘッダ用アイコン画像"width="200" height="180">
+    <ul class="nav-global clear">
+      <li><a href="./index.html">ホーム</a></li>
+      <li><a href="./contents.html">コンテンツ</a></li>
+      <li><a href="./bbs.php">掲示板</a></li>
+      <li><a href="./feedback.html">フィードバック</a></li>
+      <li><a href="./login.html">ログイン</a></li>
+      </ul>
+  </div><!-- /.wrapper-nav-global -->
+  <!-- ==============/global============== -->
+
+
+  <div class="wrapper-category">
+    <div class="category">
+      <p>登録ページ</p>
+      </div><!-- /.category -->
+  </div><!-- /.wrapper-category -->
+
+  <div class="wrapper-main">
+    <div class="main">
+      <div class="main-contents">
+      <h2>ここではログインIDとパスワードを入力するとログインIDとパスワードが登録され、送信ボタンを押すと<br>ログインIDとパスワードが確認できます。
+      </h2>
+      <form action="./registration.php" method="POST">
+        <table border=0>
+         <tr>
+             <td>ログインID</td>
+             <td><input type="text" name="id"></td>
+         </tr>
+          <tr>
+             <td>パスワード</td>
+             <td><input type="password" name="pw"></td>
+         </tr>
+         </table>
+          <input type="submit" value="送信">
+    </form>
+    <a href="./login.html" target="_self">ログインページへ</a>
+    </div><!-- /.main-contents -->
+      </div><!-- /.main -->
+</div><!-- /.wrapper-main -->
+
+<!-- ==============pageup============= -->
+ <div class="pageup">
+   <a href="#top" class="scroll-link"></a>
+   </div><!-- /.pageup -->
+ <!-- ==============/pageup============== -->
+
+
+<div class="wrapper-footer">
+  <div class="footer">
+    <small><p>Copyright &copy 2017 K.Yoshikawa All Rights Reserved.</p></small>
+    </div><!-- /.footer -->
+</div><!-- /.wrapper-footer -->
+
+  </body>
+
+</html>

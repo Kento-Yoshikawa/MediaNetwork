@@ -1,0 +1,240 @@
+<!--8月11日追記-->
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <!--Explain website-->
+   <meta name="description" content="メディアネットワーク 制作ホームページ">
+   <meta name="author" content="1510161 由川拳都">
+   <meta name="keywords" content="人工知能,初学者,機械学習,ディープラーニング">
+   <!--import jquery -->
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="scriptjquery.js"></script>
+   <!--8月11日追記 -->
+   <!--Googleアナリティクスコードを挿入することでアクセス解析ができるようにする
+   これがホームページ側のメリットの一つとなる.
+   本来この内容は見せてはならないのだろうが行ったという証拠として提示しておておく. -->
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104467996-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+   <link rel="shortcut icon" type="image/png" href="images/IsAIbeyondHuman.png">
+  <!--CSS-->
+   <link rel="stylesheet" href="homepage.css">
+   <link rel="stylesheet" href="forjquery.css">
+
+   <title>人工知能への橋渡し</title>
+ </head>
+
+  <body>
+    <!--homepage title -->
+    <div class="texttitle">人工知能への橋渡し</div><br>
+    <div class="textsubtitle">人工知能学習サイト</div>
+    <!-- ==============global============== -->
+  <div class="wrapper-nav-global">
+    <img src="images/homepageicon.png" alt="ヘッダ用アイコン画像"width="200" height="180">
+    <ul class="nav-global clear">
+      <li><a href="./index.html">ホーム</a></li>
+      <li><a href="./contents.html">コンテンツ</a></li>
+      <li><a href="./bbs.php">掲示板</a></li>
+      <li><a href="./feedback.html">フィードバック</a></li>
+      <li><a href="./login.html">ログイン</a></li>
+      </ul>
+  </div><!-- /.wrapper-nav-global -->
+  <div class="wrapper-category">
+    <div class="category">
+      <p>まず、人工知能って何?</p>
+      </div><!-- /.category -->
+  </div><!-- /.wrapper-category -->
+
+
+  <div class="wrapper-main">
+    <div class="main clear">
+
+      <!-- ==============sidebar============== -->
+      <div class="wrapper-sidebar">
+        <div class="sidebar fixedmenu noresponsive" data-offsettop="70">
+          <ul class="accordion">
+            <li><a>まず、人工知能って何?</a>
+              <div class="content">
+                   <a href="AIoutline.html">人工知能のとは何なのか? そしてその歴史</a>
+                   <a href="AIlevel.html">様々な人工知能の分類</a>
+                   <a href="Singularity.html">シンギュラリティ(技術的特異点)って何?</a>
+              </div>
+            </li>
+            <li><a>機械学習って何?</a>
+              <div class="content">
+                   <a href="machinelearning.html">機械学習とは?</a>
+                   <a href="machinelearningalgo.html">機械学習ってどうやってできるの?</a>
+              </div>
+            </li>
+            <li><a>ディープラーニングって何?</a>
+              <div class="content">
+                   <a href="deeplearning.html">ディープラーニング(深層学習)とは?</a>
+                    <a href="deeplearningalgo.html">ディープラーニングってどうやってできるの?</a>
+                   <a href="deeplearning_inthefuture.html">ディープラーニングの今後の可能性と課題</a>
+              </div>
+            </li>
+            </ul>
+          </div><!-- /.sidebar -->
+  </div><!-- /.wrapper-sidebar -->
+<!-- ==============/sidebar============== -->
+<div class="wrapper-contents">
+  <div class="contents">
+    <h1>まず、人工知能って何?</h1>
+    人工知能とは、文字通りに人工的に作られた知能です。<br>
+   <h4>「なんなんだ、このサイトはそんなの当たり前じゃないか!!」</h4>と思うでしょう。
+   実は、人工知能とは人間の知能、つまり人が自ら考えて、行動するという人にとっては当たり前の
+   ことをコンピュータにもやらせてみようというような試みを行おうとしたことが<h4>「人工知能」</h4>
+   という概念が生まれたきっかけです。このようにしてみてみると、人工知能研究とはロボットについての研究
+   と思うかもしれないけれども実は<h4>人間について研究をしている</h4>のだということがわかるかと思います。<br>
+   <!--8月11日追記-->
+   <h2>人工知能の歴史</h2>
+   次に人工知能の歴史について説明したいと思います。下の項目を読んでみてください。
+
+   <h3>人工知能って言葉が生まれたのはいつ?</h2>
+
+  人工知能という言葉は1956年にアメリカ東部のダートマスというところで開催された「ダートマス会議」という会議において会議の提案書で
+  <h4>「人間のように考えるコンピュータを人工知能と名付けよう」</h4>と決めたことが「人工知能」という言葉の始まりでこの言葉が生まれるようになった背景として
+  1946年に世界初のコンピュータといわれる巨大なコンピュータ<h4>「エニアック(ENIAC)」</h4>というものが誕生し、いつかコンピュータは人間を超えるのではないかと考えられていました。その考えを反映させた当時の最新の研究成果を発表した場が「ダートマス会議」であるといわれています。
+ <br>
+  <!--画像は
+  「 ENCYCLOPADIA BRITANNICA ENIAC」
+  https://www.britannica.com/technology/ENIAC
+  より引用した。
+   -->
+  <!--スクロールするとそのスクロール位置でこの画像が出るようになる -->
+  <div id="figure1" class="scrollEvent">
+    <img src="images/eniac.jpg" alt="ENIAC" width=500 height="350">
+  </div>
+  <br>
+  <div class="Describefigure"> 図　ENIAC</div>
+  <br>
+  また、この会議に参加していた4人の学者「ジョン・マッカーシー」、「マービン・ミンスキー」、「アレン・ニューウェル」、「ハーバート・サイモン」という人たちが当時最先端の人工知能研究の業績を挙げていたので
+  この4人は人工知能の研究者にとって偉大な人物であるとされていました。
+  <!--本当は肖像権の問題もあるが
+  今回この画像は今回の課題でしか使用せず、外部に公開する予定はないので、今回は肖像権などは不問として頂きたい
+  これらの画像は
+  ジョン マッカーシー
+  Stanford University「Stanford's John McCarthy, seminal figure of artificial intelligence, dies at 84」(2011)
+  http://news.stanford.edu/news/2011/october/john-mccarthy-obit-102511.html
+
+  マービンミンスキー
+  「Famous Births Deaths」
+   http://www.famousbirthsdeaths.com/is-marvin-minsky-dead-or-alive/
+   アレンニューウェル
+   acm「A.M TURING AWARD」
+   http://amturing.acm.org/award_winners/newell_3167755.cfm
+
+   ハーバート サイモン
+  「NAMS出版プロジェクト」
+   http://nam-students.blogspot.jp/2016/03/herbert-alexander-simon.html
+   より引用した
+  -->
+  <table cellpadding="0" cellspacing="40"><tbody>
+    <tr>
+    <td>
+     <div  class="scrollEvent">
+      <img src="images/mccarthy.jpg" alt="ジョン・マッカーシー" width=150 height="200">
+       <figcaption>ジョンマッカーシー</figcaption>
+      </div>
+   </td>
+
+   <td>
+     <div  class="scrollEvent">
+       <img src="images/marvinminsky.jpg" alt="マービン・ミンスキー" width=150 height="200">
+       <figcaption>マービン・ミンスキー</figcaption>
+     </div>
+  </td>
+
+  <td>
+    <div class="scrollEvent">
+     <img src="images/allennewell.jpg" alt="アレン・ニューウェル" width=150 height="200">
+      <figcaption>アレン・ニューウェル</figcaption>
+    </div>
+  </td>
+
+   <td>
+     <div  class="scrollEvent">
+       <img src="images/herbert.jpg" alt="ハーバート・サイモン" width=150 height="200">
+       <figcaption>ハーバート・サイモン</figcaption>
+     </div>
+   </td>
+
+  </tr>
+  </tbody>
+</table>
+
+   <h3>これまでに人工知能ブームがあったって本当?</h3>
+
+   今の人工知能ブームは<h4>「第三次人工知能ブーム」</h4>と呼ばれています。これまでに2回、人工知能ブームがあったことを皆さんは
+   ご存じだったでしょうか?<br>知らなかったという人のために人工知能ブームについて説明したいと思います。
+   <br>
+
+   <h3>第一次人工知能ブーム</h3>
+   第一次人工知能ブームは「ダートマス会議」後の1950年代後半から1960年代まで起こっていたと言われています。このブームではコンピュータに
+   迷路で道を探索木という迷路で言うところの道の通り方を調べてゴールを探し当てる<h4>「探索」</h4>やチェスや将棋で相手の出した手に対してどんな手を選ぶ
+   のが一番いいのかを判断する<h4>「推論」</h4>が盛んに行われていました。しかし、このブームの時では将棋やチェス、迷路といった限られた問題に対処することは得意
+   でも、ある人の病気に対して適切な治療方法や薬は何なのかといった現実的な問題への対処が上手くできませんでした。このため、第一次人工知能ブームは幕を閉じる事になりました。
+   <!--
+    この画像は
+   tutorialspoint SIMPLYEASYLEARNING
+  「 Data Structure - Binary Search Tree」
+   https://www.tutorialspoint.com/data_structures_algorithms/binary_search_tree.htm
+   より引用した
+    -->
+
+   <div id="figure2" class="scrollEvent">
+     <img src="images/binary_search_tree.jpg" alt="探索木" width=300 height="200">
+   </div>
+   <br>
+   <div class="Describefigure"> 探索木</div>
+
+   <h3>第二次人工知能ブーム</h3>
+
+   第二次人工知能ブームは1980年代から1990年代半ばまで起こったとされています。第一次人工知能ブームでは「探索」と「推論」を対象にして盛んに研究されていましたが、第二次人工知能ブームでは
+   <h4>「知識」</h4>を対象として研究が行われてきました。<br>
+   具体的にどんなことができるようになってきたのかというと、あらかじめ専門の知識、例えば薬や法律の知識を教えておくと、薬剤師や弁護士の代わりに専門の知識を答えてくれるようになる、ということができるようになりました。
+   この具体例として、アメリカのスタンフォード大学で感染症の患者に質問を答えさせていくと、症状を特定し、その症状にあった処方を下すという「MYCIN (マイシン)」というものが開発されました。
+   日本でも1982年に「第五世代コンピュータプロジェクト」といって、大まかにいえば今まで人が行ってきた時間のかかる作業を人工知能が代わりにできるようにしようと国を挙げて取り組みました。
+   <br>しかし、一見すると完璧な人工知能ができたように思われるこの第二次人工知能ブームも人工知能に対して知識を入れるのは結局は人間ですから、たとえ人工知能が
+   知識を活用できるようになっても、数多くの事態に対応できるような強力な知識を教え込むことは事実上不可能であるとされたので第二次人工知能ブームも幕を閉じることになりました.
+
+   <h3>第三次人工知能ブーム</h3>
+   第三次人工知能ブームは1990年代に検索エンジンが登場してきてからWebページというものが生まれるようになりコンピュータにデータを教え込むときにWebページの情報という大量のデータを教えることが簡単になったことが始まりでとされています。
+   このブームで大きく進歩を遂げた分野として<h4>「自然言語処理」</h4>というものがあります。<br>
+   自然言語処理とは大まかにいえば、私たちが話したり、書いたりする日本語などである自然言語をコンピュータが読み取って、コンピュータにいろいろなことをさせようとすることを言います。<br>
+   自然言語処理の応用例としては<h4>Google 翻訳</h4> <h4>予測変換</h4> 人が何を言っているかなどをコンピュータが理解できるようになる<h4>音声認識</h4>といったものが挙げられます。
+   <br>
+   また、このブームの大きな火付け役として<h4>「ディープラーニング」</h4>というものがあります。ディープラーニングについては詳しくは左のサイドバー<a href="deeplearnling.html">「ディープラーニングって何?」</a>のページを読んでみてください。
+   そして、このブームを終わらせないために、人工知能研究が世の中の役に立つことを示していくことが現在、人工知能業界において大きな課題であるとも言えます。
+
+
+
+ </div><!--contents-->
+  </div><!-- /.wrapper-contents-->
+</div><!-- /.main -->
+
+
+<!-- ==============pageup============= -->
+<div class="pageup">
+<a href="#top" class="scroll-link"></a>
+</div><!-- /.pageup -->
+ <!-- ==============/pageup============== -->
+
+<div class="wrapper-footer">
+  <div class="footer">
+    <small><p>Copyright &copy 2017 K.Yoshikawa All Rights Reserved.</p></small>
+    </div><!-- /.footer -->
+</div><!-- /.wrapper-footer -->
+
+  </body>
+
+</html>

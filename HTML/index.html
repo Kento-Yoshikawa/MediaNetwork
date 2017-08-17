@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <!--Explain website-->
+   <meta name="description" content="メディアネットワーク 制作ホームページ">
+   <meta name="author" content="1510161 由川拳都">
+   <meta name="keywords" content="人工知能,初学者,機械学習,ディープラーニング">
+   <!--import jquery -->
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="scriptjquery.js"></script>
+   <script src="jquery.lettering.js"></script>
+   <script src="jquery.textillate.js"></script>
+  <script>
+  $(function () {
+        $('.texttitle').textillate({
+                // ループ
+                loop: false,
+                // 間隔時間
+                minDisplayTime: 2000,
+                // 遅延時間
+                initialDelay: 0,
+                // 自動スタート
+                autoStart: true,
+                // アニメーションの開始オプション
+                in: {
+                        // エフェクト
+                        effect: 'fadeInLeftBig',
+                        // 遅延時間の指数
+                        delayScale: 1.5,
+                        // 文字の遅延時間
+                        delay: 200,
+                        // アニメーションを同時実行
+                        sync: false,
+                        // アニメーションをランダム実行
+                        shuffle: false,
+                        // アニメーションをリバース実行
+                        reverse: false
+                }
+      });
+});
+$(function () {
+      $('.textsubtitle').textillate({
+              // ループ
+              loop: false,
+              // 間隔時間
+              minDisplayTime: 2000,
+              // 遅延時間
+              initialDelay: 1500,
+              // 自動スタート
+              autoStart: true,
+              // アニメーションの開始オプション
+              in: {
+                      // エフェクト
+                      effect: 'fadeInLeftBig',
+                      // 遅延時間の指数
+                      delayScale: 1.5,
+                      // 文字の遅延時間
+                      delay: 200,
+                      // アニメーションを同時実行
+                      sync: false,
+                      // アニメーションをランダム実行
+                      shuffle: false,
+                      // アニメーションをリバース実行
+                      reverse: false
+              }
+    });
+});
+ </script>
+ <!--8月11日追記 -->
+ <!--Googleアナリティクスコードを挿入することでアクセス解析ができるようにする
+ これがホームページ側のメリットの一つとなる.
+本来この内容は見せてはならないのだろうが行ったという証拠として提示しておておく-->
+ <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-104467996-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+   <!--
+   アイコンは
+  「人工知能は人間を超えるか ディープラーニングの先にあるもの (角川EPUB選書) 」
+   https://www.amazon.co.jp/%E4%BA%BA%E5%B7%A5%E7%9F%A5%E8%83%BD%E3%81%AF%E4%BA%BA%E9%96%93%E3%82%92%E8%B6%85%E3%81%88%E3%82%8B%E3%81%8B-%E3%83%87%E3%82%A3%E3%83%BC%E3%83%97%E3%83%A9%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%81%AE%E5%85%88%E3%81%AB%E3%81%82%E3%82%8B%E3%82%82%E3%81%AE-%E8%A7%92%E5%B7%9DEPUB%E9%81%B8%E6%9B%B8-%E6%9D%BE%E5%B0%BE-%E8%B1%8A/dp/4040800206
+　　より引用した
+   -->
+
+   <link rel="shortcut icon" type="image/png" href="images/IsAIbeyondHuman.png">
+  <!--CSS-->
+   <link rel="stylesheet" href="homepage.css">
+   <link rel="stylesheet" href="forjquery.css">
+   <link rel="stylesheet" href=" animate.css ">
+
+   <title>人工知能への橋渡し</title>
+ </head>
+
+  <body>
+    <div class="wrapper-header">
+      <div class="header">
+	<div class="nav-administ"><a href="loginadminist.html">管理者専用ページ</a></div>
+	 </div><!-- /.header -->
+  </div><!-- /.wrapper-header -->
+
+  <div class="texttitle">人工知能への橋渡し</div><br>
+  <div class="textsubtitle">人工知能学習サイト</div>
+
+
+    <!-- ==============global============== -->
+  <div class="wrapper-nav-global">
+   <!--ヘッダー用の画像は
+   「Yoga & Juicing Holiday in Turkey 」
+    http://thethoughtgym.com/retreats/
+    より引用した。
+    -->
+    <img src="images/homepageicon.png" alt="ヘッダ用アイコン画像"width="200" height="180">
+    <ul class="nav-global clear">
+      <li><a href="./index.html">ホーム</a></li>
+      <li><a href="./contents.html">コンテンツ</a></li>
+      <li><a href="./bbs.php">掲示板</a></li>
+      <li><a href="./feedback.html">フィードバック</a></li>
+      <li><a href="./login.html">ログイン</a></li>
+      </ul>
+  </div><!-- /.wrapper-nav-global -->
+  <!-- ==============/global============== -->
+
+  <div class="wrapper-slide">
+    <!-- ==============slide============== -->
+  <!--スライドショーの画像は
+
+  「IMAGE GALLERY BINARY-CODE-WALL-ANIMATION 」(2016)
+   http://download-wallpaper.net/single/61_binary-code-wall-animation_8.html
+
+  「Master Artificial Intelligence - Infos zum Masterstudium」
+   http://www.master-and-more.de/master-artificial-intelligence.html
+
+  「PEPPER 2.0? THE ROBOT’S CREATORS EXPLAIN WHAT’S COMING NEXT」
+   http://factor-tech.com/feature/pepper-2-0-the-robots-creators-explain-whats-coming-next/
+  より引用した。
+ -->
+  <div class="slide">
+    <ul class="container">
+      <li class="current"><img src="images/binarydigit.jpg" alt="スライドショー画像1" width="1000" height="500"></li>
+      <li><img src="images/Kuenstliche_Intelligenz_Roboter.jpg" alt="スライドショー画像2" height="500"></li>
+      <li><img src="images/pepper-robot-2.0.jpg" alt="スライドショー画像3" width="740" height="500"></li>
+      </ul>
+    <a href="#" class="prev">前の画像へ遷移</a>
+    <a href="#" class="next">次の画像へ遷移</a>
+    </div><!-- /.slide -->
+  <!-- ==============/slide============== -->
+</div><!-- /.wrapper-slide -->
+
+
+  <div class="wrapper-category">
+    <div class="category">
+      <p>このサイトについて</p>
+      </div><!-- /.category -->
+  </div><!-- /.wrapper-category -->
+
+  <div class="wrapper-main">
+    <div class="main">
+      <div class="main-contents">
+	<h1>昨今話題になっている人工知能（AI）</h1>
+	<p class="lead">このサイトの説明に入るその前に…</p>
+
+      <p>
+      皆さんは最近、新聞や雑誌、テレビなどでたびたび
+      人工知能(通称AI)という言葉をよく耳にすると思います。
+      現在、チェスや将棋、そして最近では囲碁でもAIが人間に勝利するようになったと話題を
+      呼んでいるAI、まずはその恩恵と懸念について説明しようと思います。
+      </p>
+
+      <h2>AIによる恩恵</h2>
+      <p>
+        まず、AIにより生まれる恩恵として労働問題に注目してみると、人口が減少しつつある
+      日本では介護ロボットや農作業ロボットなど労働力不足の解消や作業効率化につながるのではないかと言われています。<br>
+      また、AIというとロボットをイメージする人が多いかと思いますが、Amazonで自分が購入したり
+      チェックした商品と類似した商品をおすすめする「レコメンデーション機能」や自動運転技術、医療面では膨大な画像診断データから患者の病気の症状を判断し、適切な処方を提示することができる
+      ようになるなどますます発展を遂げており、最近ではAIが作曲や小説を書けるようになるなど
+      エンターテインメント性も見られるようになってきました。
+      </p>
+      <h2>AIに対する懸念</h2>
+      <p>
+        しかし、人工知能ことAIに期待を寄せる一方、<h4>「AIが人間には難しいことも
+         いろいろできるようになったからAIに職が奪われてしまうのではないか?」</h4>
+         <br>はたまた、<h4>「人間よりも賢くなって進化を遂げているAIがいつしか人間を襲ってしまうのではないか?」</h4><br>などという懸念を抱く人もいて、有名人の中には
+        イギリスとの理論物理学者「スティーブン・ホーキング」氏や
+        マイクロソフト共同創設者の「ビル・ゲイツ」氏もこれらの懸念を抱き、AIに対して
+        否定的な姿勢を持っています。
+        また、2004年に公開された映画「I,Robot」ではロボットが人間を襲う姿が描かれるなど
+        少なからずそのような未来を想像する人がいるということがわかると思います。
+      </p>
+      <h2>このサイトはいったい何?</h2>
+      <p>
+        このように良くも悪くも最近世間を賑わせているAIですが、
+        皆さんは人AIについてあまりよくわかっていないという人が多いのではないでしょうか?<br>
+        <h4>このサイトはAIやその技術について学びたいのだけれども、「本や今までのWebサイトには
+        難しいことしか書いていなくてよく理解できない!」というような人たちの理解の手助けとなるサイトです。</h4>
+        <br>詳しくは<a href="./contents.html">コンテンツ</a>の項目を参照してください。
+      </p>
+      </div><!-- /.main-contents -->
+      </div><!-- /.main -->
+</div><!-- /.wrapper-main -->
+
+<!-- ==============pageup============= -->
+<div class="pageup">
+  <a href="#top" class="scroll-link"></a>
+</div><!-- /.pageup -->
+<!-- ==============/pageup============== -->
+
+
+<div class="wrapper-footer">
+  <div class="footer">
+    <small><p>Copyright &copy 2017 K.Yoshikawa All Rights Reserved.</p></small>
+    </div><!-- /.footer -->
+</div><!-- /.wrapper-footer -->
+
+  </body>
+
+</html>

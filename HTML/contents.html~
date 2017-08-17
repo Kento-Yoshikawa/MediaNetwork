@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!-- 後で改変-->
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <!--Explain website-->
+   <meta name="description" content="メディアネットワーク 制作ホームページ">
+   <meta name="author" content="1510161 由川拳都">
+   <meta name="keywords" content="人工知能,初学者,機械学習,ディープラーニング">
+   <!--import jquery -->
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="scriptjquery.js"></script>
+   <!--8月11日追記 -->
+   <!--Googleアナリティクスコードを挿入することでアクセス解析ができるようにする
+   これがホームページ側のメリットの一つとなる.
+ 本来この内容は見せてはならないのだろうが行ったという証拠として提示しておておく-->
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104467996-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+   <link rel="shortcut icon" type="image/png" href="images/IsAIbeyondHuman.png">
+  <!--CSS-->
+   <link rel="stylesheet" href="homepage.css">
+   <link rel="stylesheet" href="forjquery.css">
+
+   <title>人工知能への橋渡し</title>
+ </head>
+
+  <body>
+    <div class="txttitle">人工知能への橋渡し</div><br>
+    <div class="txtsubtitle">人工知能学習サイト</div>
+
+    <!-- ==============global============== -->
+  <div class="wrapper-nav-global">
+    <img src="images/homepageicon.png" alt="ヘッダ用アイコン画像"width="200" height="180">
+    <ul class="nav-global clear">
+      <li><a href="./index.html">ホーム</a></li>
+      <li><a href="./contents.html">コンテンツ</a></li>
+      <li><a href="./bbs.html">掲示板</a></li>
+      <li><a href="./feedback.html">フィードバック</a></li>
+      <li><a href="./login.html">ログイン</a></li>
+      </ul>
+  </div><!-- /.wrapper-nav-global -->
+  <!-- ==============/global============== -->
+
+
+  <div class="wrapper-category">
+    <div class="category">
+      <p>メインコンテンツの紹介</p>
+      </div><!-- /.category -->
+  </div><!-- /.wrapper-category -->
+
+  <div class="wrapper-main">
+    <div class="main clear">
+      <!-- ==============sidebar============== -->
+      <div class="wrapper-sidebar">
+	<div class="sidebar fixedmenu noresponsive" data-offsettop="70">
+	  <ul class="accordion">
+	    <li><a>まず、人工知能って何?</a>
+              <div class="content">
+                     <a href="AIoutline.html">人工知能のとは何なのか? そしてその歴史</a>
+                   <a href="AIlevel.html">様々な人工知能の分類</a>
+                   <a href="Singularity.html">シンギュラリティ(技術的特異点)って何?</a>
+              </div>
+            </li>
+	    <li><a>機械学習って何?</a>
+              <div class="content">
+                   <a href="machinelearning.html">機械学習とは?</a>
+                   <a href="machinelearningalgo.html">機械学習ってどうやってできるの?</a>
+              </div>
+            </li>
+	    <li><a>ディープラーニングって何?</a>
+              <div class="content">
+                  <a href="deeplearning.html">ディープラーニング(深層学習)とは?</a>
+                  <a href="deeplearningalgo.html">ディープラーニングってどうやってできるの?</a>
+                  <a href="deeplearn_inthefuture.html">ディープラーニングの今後の可能性と課題</a>
+              </div>
+            </li>
+	    </ul>
+	  </div><!-- /.sidebar -->
+	</div><!-- /.wrapper-sidebar -->
+      <!-- ==============/sidebar============== -->
+      <div class="wrapper-contents">
+        <div class="contents">
+          <h1>ここでは人工知能の説明をしているページを<br>紹介します。</h1>
+          <h2>「まず、人工知能って何?」のページについての紹介</h2>
+           まずは、そもそも人工知能についてよくわかっていないという方は左のサイドバーの<h4>まず、人工知能って何?</h4>
+          のページをご覧になってください。そのページでは人工知能について歴史を紹介しながら、様々な種類の人工知能を紹介し
+          最新の人工知能のトピックスについても説明をしています。<br>
+          <h2>「機械学習って何?」のページについての紹介</h2>
+           このページでは機械学習についての大まかな定義や機械学習が使われている事例を紹介し、機械学習が行う問題の代表的な解決方法
+           (アルゴリズム)を紹介、説明をしています。
+          <h2>「ディープラーニングって何?」のページについての紹介</h2>
+          このページでは昨今の人工知能ブームに火をつけることになり、人工知能の発展に大きくかかわっている
+          ディープラーニングについてそのすごさを紹介するとともに、ディープラーニングの大まかな方法や今後の可能性について
+          紹介、説明をしています。
+        </div><!--contents-->
+	</div><!-- /.wrapper-contents-->
+      </div><!-- /.main -->
+
+
+  <!-- ==============pageup============= -->
+  <div class="pageup">
+    <a href="#top" class="scroll-link"></a>
+    </div><!-- /.pageup -->
+  <!-- ==============/pageup============== -->
+
+<div class="wrapper-footer">
+  <div class="footer">
+    <small><p>Copyright &copy 2017 K.Yoshikawa All Rights Reserved.</p></small>
+    </div><!-- /.footer -->
+</div><!-- /.wrapper-footer -->
+
+  </body>
+
+</html>

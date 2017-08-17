@@ -1,0 +1,165 @@
+<!--8月12日 8月13日追記-->
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <!--Explain website-->
+   <meta name="description" content="メディアネットワーク 制作ホームページ">
+   <meta name="author" content="1510161 由川拳都">
+   <meta name="keywords" content="人工知能,初学者,機械学習,ディープラーニング">
+   <!--import jquery -->
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="scriptjquery.js"></script>
+   <!--8月11日追記 -->
+   <!--Googleアナリティクスコードを挿入することでアクセス解析ができるようにする
+   これがホームページ側のメリットの一つとなる.
+   本来この内容は見せてはならないのだろうが行ったという証拠として提示しておておく-->
+   <script>
+   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+   ga('create', 'UA-104467996-1', 'auto');
+   ga('send', 'pageview');
+
+  </script>
+
+   <link rel="shortcut icon" type="image/png" href="images/IsAIbeyondHuman.png">
+  <!--CSS-->
+   <link rel="stylesheet" href="homepage.css">
+   <link rel="stylesheet" href="forjquery.css">
+
+   <title>人工知能への橋渡し</title>
+ </head>
+
+  <body>
+    <div class="txttitle">人工知能への橋渡し</div><br>
+    <div class="txtsubtitle">人工知能学習サイト</div>
+    <!-- ==============global============== -->
+  <div class="wrapper-nav-global">
+    <img src="images/homepageicon.png" alt="ヘッダ用アイコン画像"width="200" height="180">
+    <ul class="nav-global clear">
+      <li><a href="./index.html">ホーム</a></li>
+      <li><a href="./contents.html">コンテンツ</a></li>
+      <li><a href="./bbs.php">掲示板</a></li>
+      <li><a href="./feedback.html">フィードバック</a></li>
+      <li><a href="./login.html">ログイン</a></li>
+      </ul>
+  </div><!-- /.wrapper-nav-global -->
+  <!-- ==============/global============== -->
+
+
+
+  <div class="wrapper-category">
+    <div class="category">
+      <p>ディープラーニングって何?</p>
+      </div><!-- /.category -->
+  </div><!-- /.wrapper-category -->
+
+
+  <div class="wrapper-main">
+    <div class="main clear">
+
+      <!-- ==============sidebar============== -->
+      <div class="wrapper-sidebar">
+        <div class="sidebar fixedmenu noresponsive" data-offsettop="70">
+          <ul class="accordion">
+            <li><a>まず、人工知能って何?</a>
+              <div class="content">
+                   <a href="AIoutline.html">人工知能のとは何なのか? そしてその歴史</a>
+                   <a href="AIlevel.html">様々な人工知能の分類</a>
+                   <a href="Singularity.html">シンギュラリティ(技術的特異点)って何?</a>
+                 </div>
+    </li>
+    <li><a>機械学習って何?</a>
+      <div class="content">
+           <a href="machinelearning.html">機械学習とは?</a>
+           <a href="machinelearningalgo.html">機械学習ってどうやってできるの?</a>
+      </div>
+    </li>
+    <li><a>ディープラーニングって何?</a>
+      <div class="content">
+           <a href="deeplearning.html">ディープラーニング(深層学習)とは?</a>
+           <a href="deeplearningalgo.html">ディープラーニングってどうやってできるの?</a>
+           <a href="deeplearning_inthefuture.html">ディープラーニングの今後の可能性と課題</a>
+      </div>
+    </li>
+    </ul>
+  </div><!-- /.sidebar -->
+</div><!-- /.wrapper-sidebar -->
+<!-- ==============/sidebar============== -->
+<div class="wrapper-contents">
+<div class="contents">
+  <h1>ディープラーニングってどうやってできるの?</h1>
+  <a href="deeplearning.html">「ディープラーニング(深層学習)とは?」</a>というページをご覧になった皆さんはディープラーニングとは何をすることなのかは理解できたかと思います。しかし、ディープラーニングは
+  どうやったらできるのか気になる人もいるのではないでしょうか? この項目ではどのようにしたらディープラーニングができるのかということを説明していきたいと思います。<br>
+  <h2>多層ニューラルネットワークって何?</h2>
+  まず、ディープラーニングを理解してもらう上で必要になる考え方として<h4>「多層ニューラルネットワーク」</h4>というものがあります。この多層ニューラルネットワークについて説明していきたいと思います。<br><br>
+  多層ニューラルネットワークとは下の図のように<a href="machinelearningalgo.html">「機械学習ってどうやってできるの?」</a>の項目で説明した「パーセプトロン(単層ニューラルネットワーク)」に中間層(隠れ層ともいいます。)を設けることで
+  データを判別するのための材料をいろいろな視点から調べることができるようになるというものです。<br>具体例で言うと、会社の上司と部下の関係を考えてみましょう。平社員(入力層)、係長(中間層)、課長(出力層)として何か新しい仕事の企画を考えているとしましょう。
+  平社員は係長に自分の考えた企画の内容を伝えます。係長はその平社員からの企画でよかった企画を課長に伝えます。課長は係長から伝えてもらったその企画の中で気に入ったものを選ぶ、というようなものです。
+
+    <!--画像は
+　　　「画像情報通信工学研究室 ニューラルネットワーク」
+　　　http://www.iic.ecei.tohoku.ac.jp/previous/research/neural.html-
+ 　　より引用した。
+  -->
+  <div id="figure6" class="scrollEvent">
+    <img src="images/neural.png" alt="ニューラルネットワーク" width=300 height="200">
+  </div>
+  <br>
+    この中間層をたくさん重ねていくとどんどん分類が上手くいくのではないかと思われていました。しかし、このまま中間層をいくつも重ねていっても、うまくいきませんでした。その原因は、中間層を重ねていくと前の中間層で積み重なった誤差が上手く修正されず、間違ったデータのまま出力層に伝わってしまうためです。<br><br>
+    「難しくて何をいっているのかわからない!」という人もいるでしょう。私たちに馴染み深い例として「伝言ゲーム」を考えてみましょう。<br>伝言ゲームで伝言を始めに伝える人(入力層)が次の人(中間層)にその内容を伝えていきます。はじめのうちは上手く内容が伝わっていきますが、次の人次の人へと
+    伝えていくたびにその「次の人(中間層)」が始めの人が言ったことと違ったことを言うようになってしまうと最後に伝言の内容を答える人(出力層)には伝言をはじめに伝える人とは全く違う内容を答えとしていうようになってしまうということです。<br><br>
+
+  この問題の解決策とは何なのかについては次の「自己符号化器(オートエンコーダー)って何?」の内容を読んでみてください。
+
+  <h2>自己符号化器(オートエンコーダー)って何?</h2>
+  多層ニューラルネットワークで起こってしまう問題を解決しディープラーニングというものを生み出したものとして<h4>自己符号化器(オートエンコーダー)</h4>というものがあります。<br>
+  自己符号化器とは下の図のようなものです。
+  <!-- 画像は
+    Lazy Programmer
+　　「A Tutorial on Autoencoders for Deep Learning」
+   https://lazyprogrammer.me/a-tutorial-on-autoencoders/
+   より引用した。
+   -->
+   <div id="figure7" class="scrollEvent">
+     <img src="images/autoencoder.png" alt="自己符号化器" width=300 height="250">
+   </div>
+
+
+  このままでは、意味が分からないと思われるので、この図が表していることを説明していくことにしましょう。<br>
+
+  自己符号化器とは入力層と出力層で得られる結果(正解)を一緒にし、入力層と出力層で内容が同じになるように入力層と中間層でやり取りと行うというものです。入力層と出力層で正解を同じにするということ、具体例でいうならば古い1000円札を新しい1000円札に変えるということに何の意味があるの?と思う人もいるでしょう。
+  しかし、これは人工知能にとってはとても意味のあることなのです。では、その理由をまたもや日常生活の例を交えながら説明していくことにしましょう。<br><br>
+
+　自己符号化器のように正解をあらかじめ知らせておくと、ニューラルネットワークにおいて中間層の数を減らすことができるようになり、中間層にあるのは正解とほぼ同じような完璧なデータだけを出力層に伝えることができるようになるということが大きなメリットとなるのです。
+  このままでは、抽象的で何を言っているのかわからない!という人もいるでしょう。ここで、日常生活の例として全国の天気を知りたい場合を考えてみましょう。<br><br>
+
+  今日の全国の天気が知りたいというときに、日本全国の都道府県、市町村町の天気を覚えることができれば日本全国の今日の天気を知ることができるでしょう。しかし、このように日本全国の今日の天気を覚えるということは今日という日が終わってしまうぐらい大変なことです。
+  そこで、東京都の天気が晴れ、神奈川県の天気も晴れ、千葉県の天気も晴れだとあらかじめ知っていれば東京都、神奈川県、千葉県の天気は晴れだとまとめて覚え、千葉県に近い茨城県や東京都に近い埼玉県も晴れだろうと予測を立てるのです。このようどんどん範囲を広げていき、間違った天気だった場合は
+  その場所だけ覚えなおすということをしていくと、近畿地方はすべて雨、東日本はすべてくもりなどと覚える量を減らしてくことができるとともに正確に今日の天気を知ることができるようになるのです。<br><br>
+
+  このようにあらかじめ正解を知っているとコンピュータは人間と同じようにこれまでの経験から覚える必要のないことは覚えないで必要なところだけを覚えるように設定することができるようになった、ということが大きな進歩であり自己符号化器がティープランニングというものを作り上げているといえるのです。
+
+
+      </div><!--contents-->
+      </div><!-- /.wrapper-contents-->
+    </div><!-- /.main -->
+
+<!-- ==============pageup============= -->
+<div class="pageup">
+  <a href="#top" class="scroll-link"></a>
+  </div><!-- /.pageup -->
+<!-- ==============/pageup============== -->
+
+<div class="wrapper-footer">
+<div class="footer">
+  <small><p>Copyright &copy 2017 K.Yoshikawa All Rights Reserved.</p></small>
+</div><!-- /.footer -->
+</div><!-- /.wrapper-footer -->
+
+</body>
+
+</html>

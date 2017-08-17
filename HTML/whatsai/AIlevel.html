@@ -1,0 +1,173 @@
+<!--8月11日追記-->
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+   <meta charset="utf-8">
+   <!--Explain website-->
+   <meta name="description" content="メディアネットワーク 制作ホームページ">
+   <meta name="author" content="1510161 由川拳都">
+   <meta name="keywords" content="人工知能,初学者,機械学習,ディープラーニング">
+   <!--import jquery -->
+   <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src="scriptjquery.js"></script>
+   <!--8月11日追記 -->
+   <!--Googleアナリティクスコードを挿入することでアクセス解析ができるようにする
+   これがホームページ側のメリットの一つとなる.
+   本来この内容は見せてはならないのだろうが行ったという証拠として提示しておておく. -->
+   <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-104467996-1', 'auto');
+  ga('send', 'pageview');
+
+ </script>
+
+   <link rel="shortcut icon" type="image/png" href="images/IsAIbeyondHuman.png">
+  <!--CSS-->
+   <link rel="stylesheet" href="homepage.css">
+   <link rel="stylesheet" href="forjquery.css">
+
+   <title>人工知能への橋渡し</title>
+ </head>
+
+  <body>
+    <!--homepage title -->
+    <div class="texttitle">人工知能への橋渡し</div><br>
+    <div class="textsubtitle">人工知能学習サイト</div>
+    <!-- ==============global============== -->
+  <div class="wrapper-nav-global">
+    <img src="images/homepageicon.png" alt="ヘッダ用アイコン画像"width="200" height="180">
+    <ul class="nav-global clear">
+      <li><a href="./index.html">ホーム</a></li>
+      <li><a href="./contents.html">コンテンツ</a></li>
+      <li><a href="./bbs.php">掲示板</a></li>
+      <li><a href="./feedback.html">フィードバック</a></li>
+      <li><a href="./login.html">ログイン</a></li>
+      </ul>
+  </div><!-- /.wrapper-nav-global -->
+  <div class="wrapper-category">
+    <div class="category">
+      <p>まず、人工知能って何?</p>
+      </div><!-- /.category -->
+  </div><!-- /.wrapper-category -->
+
+
+  <div class="wrapper-main">
+    <div class="main clear">
+
+      <!-- ==============sidebar============== -->
+      <div class="wrapper-sidebar">
+        <div class="sidebar fixedmenu noresponsive" data-offsettop="70">
+          <ul class="accordion">
+            <li><a>まず、人工知能って何?</a>
+              <div class="content">
+                   <a href="AIoutline.html">人工知能のとは何なのか? そしてその歴史</a>
+                   <a href="AIlevel.html">様々な人工知能の分類</a>
+                   <a href="Singularity.html">シンギュラリティ(技術的特異点)って何?</a>
+              </div>
+            </li>
+            <li><a>機械学習って何?</a>
+              <div class="content">
+                   <a href="machinelearning.html">機械学習とは?</a>
+                   <a href="machinelearningalgo.html">機械学習ってどうやってできるの?</a>
+              </div>
+            </li>
+            <li><a>ディープラーニングって何?</a>
+              <div class="content">
+                   <a href="deeplearning.html">ディープラーニング(深層学習)とは?</a>
+                    <a href="deeplearningalgo.html">ディープラーニングってどうやってできるの?</a>
+                    <a href="deeplearning_inthefuture.html">ディープラーニングの今後の可能性と課題</a>
+              </div>
+            </li>
+            </ul>
+          </div><!-- /.sidebar -->
+  </div><!-- /.wrapper-sidebar -->
+<!-- ==============/sidebar============== -->
+<div class="wrapper-contents">
+  <div class="contents">
+    <h1>様々な人工知能の分類</h1>
+   <h2>人工知能のレベルって何?</h2>
+   皆さんが人工知能と一口に言っているものにも様々なカテゴリーがあって、人工知能と一言で言っても色々なものがある
+   ということをご存知の方はいらっしゃるでしょうか?「え、知らなかった!」という人たちのためにこのページでは人工知能のレベルを4つのレベルに分けて
+   説明しようと思います。<br>
+   <h3>レベル1の人工知能</h3>
+   レベル1の人工知能とは、しばしば宣伝で言われているような「人工知能搭載」の家電製品のようなものであると言えます。この「人工知能搭載」と呼ばれるようなものは「制御工学」という学問で実現できることであるとされています。
+   <br>「制御工学ってなんだ?」という人たちのために制御工学というものを説明しておくと、与えられた情報(入力といいます)を望んでいる結果(出力といいます)に変えるためにどのようにすればよいか（制御すればよいか)を考える学問だと思って
+   頂くとよいと思います。<br>具体的には、熱いコーヒー(入力)を自分が飲める温度に冷やしたコーヒー(出力)にするためにどれだけの氷を入れればよいか(制御する)を考えることだといえます。
+
+   <h3>レベル2の人工知能</h3>
+   例としてはお掃除ロボットの「ルンバ」やテレビゲームに組み込まれているプログラムとしての人工知能、質問の受け答えができる人工知能のようながあり、このレベル2の人工知能では、与えられた情報に対する応答がいろいろある人工知能のことを言います。
+   つまり、レベル2の人工知能とは、質問の受け答えができる人工知能ならば、「好きな食べ物なに?」といった質問をするときに「リンゴ」しか答えられないのではなくハンバーグ、ステーキなどいろいろな答え方ができるような人工知能のことです。
+
+   <h3>レベル3の人工知能</h3>
+   レベル3の人工知能とは「機械学習」を取り入れた人工知能であるといえます。<br>
+   「機械学習って何?」って思った方は詳しくは左にあるサイドバーの「機械学習って何?」のページを読んでみてください。<br>
+   このレベルの人工知能ではWeb上で取得した「これまでは管理と処理をすることが難しかった膨大なデータ」を表す言葉であるビックデータを情報源として情報を自動的に判断できるようになった人工知能のことをいいます。
+   このレベルの人工知能の特徴として与えられた情報を過去のデータをもとにして自分で判断できるようになったことが挙げられます。
+   具体的な応用例はスパムメールの分類が挙げられます。
+
+   <h3>レベル4の人工知能</h3>
+    レベル4の人工知能とは「ディープラーニング」を取り入れた人工知能であるといえます。<br>
+  「ディープラーニングって何?」って思った方は詳しくは左にあるサイドバーの「ディープラーニングって何?」のページを読んでみてください。<br>
+  このレベルの人工知能では、ビックデータを与えてくれれば、いちいちそのデータの内容を教えなくとも、コンピュータが勝手にデータの内容を把握し、未知の情報に対して状況判断ができるようになりました。<br>
+  つまり、例として、「ライオン」というものを教えるために機械学習では「たてがみがあって、しっぽがあって…」といった情報(これを特徴量といいます)をコンピュータに教えないといけなかったのですが、そこから進化を遂げ、ライオンの画像を見せただけで
+  人が教えなくとも、コンピュータが自分でライオンの情報をつかみというものを理解できるようになったというのがレベル4の人工知能です。
+
+
+   <h2>汎用人工知能と特化型人工知能って何?</h2>
+   人工知能にはこれまでに述べてきたレベルによる分類だけでなく、その人工知能ができることでも分類ができます。それは「汎用人工知能」と「特化型人工知能」と呼ばれるものです。
+   これからご覧になっていただく内容を見ても、一口に人工知能といって色々なものがあるということがよく分かるかと思います。
+
+   <h3>特化型人工知能とは?</h3>
+   まず、特化型人工知能とは、特定の目的だけができればいいという人工知能のこといいます。具体例で言えば、世間を賑わせた<h4>「AlphaGo(アルファ碁)」</h4>や2011年にアメリカのクイズ番組「ジョパディ!」で登場したIBMによって開発された<h4>「ワトソン」</h4>
+  といったものが挙げられます。このように囲碁だけできる、クイズに答えることだけできるという人工知能が特化型人工知能です。
+  <!--
+    画像は
+   日経トレンディネット
+   「コンピューターは“ヒト”になれるか（前編）、IBMワトソンがクイズ王に勝てた理由」
+    http://trendy.nikkeibp.co.jp/article/column/20140707/1058925/
+    より引用した。
+   -->
+  <div id="figure3" class="scrollEvent">
+    <img src="images/watson.jpg" alt="ワトソン" width=300 height="200">
+  </div>
+  <br>
+  <div class="Describefigure"> 「ジョパティ!」でクイズに答える「ワトソン」</div>
+  <br>
+  また、この「特化型人工知能」という言葉に関連した言葉として<h4>「弱いAI」</h4>という言葉があります。
+  弱いAIとは、人間のような心を持ち自らの意思で行動するようなことはしないで、人間が行うことができる中で限られたことができる人工知能のことを言います。例でいうと囲碁やクイズだけができ、それを意思や自我といった人間らしい感情を持つことなく淡々と機械的に物事をこなしていく人工知能のことです。
+
+   <h3>汎用人工知能とは?</h3>
+   汎用人工知能とは、大まかにいえば特化型人工知能のように特定のことだけができるだけでなく、人間のように特化型人工知能では専門外のあらかじめプログラムに組み込まれていない複雑な問題にも対処できる人工知能のことを言います。<br>
+   また、この「汎用人工知能」という言葉に関連して<h4>強いAI</h4>という言葉があります。<br>
+   強いAIとは物を見て「きれい」、「かわいい」といった感情を抱き、人のように仕事ができる、といったまるで人のような意思や自我を持っている人工知能のことをいう言葉です。<br>
+   これらの言葉の説明がつく具体例を挙げるなら、「ドラえもん」のように人の心を理解でき、自分の意志で会話ができ、自分でいろいろな問題を解決できるようになる人工知能のことです。<br>
+
+  現在、この汎用人工知能であると言えるような人工知能はなく、この汎用人工知能の実用化に向けて、まずは人の脳をコンピュータで再現しようとする研究が行われています。
+
+
+
+
+ </div><!--contents-->
+  </div><!-- /.wrapper-contents-->
+</div><!-- /.main -->
+
+
+<!-- ==============pageup============= -->
+<div class="pageup">
+<a href="#top" class="scroll-link"></a>
+</div><!-- /.pageup -->
+ <!-- ==============/pageup============== -->
+
+<div class="wrapper-footer">
+  <div class="footer">
+    <small><p>Copyright &copy 2017 K.Yoshikawa All Rights Reserved.</p></small>
+    </div><!-- /.footer -->
+</div><!-- /.wrapper-footer -->
+
+  </body>
+
+</html>
